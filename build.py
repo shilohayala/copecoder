@@ -106,10 +106,12 @@ def card(p, up):
 
 
 def post_row(p, up):
+    img = ""
+    if p.get("img"):
+        img = f'\n<img class="post-img" src="{up}assets/{p["img"]}" alt="{attr(p["img_alt"])}" loading="lazy">'
     return f"""<a class="post" href="{up}writing/{p['slug']}.html">
 <span class="post-body">
-<span class="post-title">{p['title']}</span>
-<img class="post-img" src="{up}assets/{p['img']}" alt="{attr(p['img_alt'])}" loading="lazy">
+<span class="post-title">{p['title']}</span>{img}
 <span class="post-teaser">{p['teaser']}</span>
 </span>
 <span class="post-date">{p['date']}</span>
@@ -286,12 +288,15 @@ def project_page(p, mode):
 def post_page(p, mode):
     up = "../"
     cap = f"<figcaption>{p['credit']}</figcaption>" if p.get("credit") else ""
+    cover = ""
+    if p.get("img"):
+        cover = f'<figure class="cover"><img src="{up}assets/{p["img"]}" alt="{attr(p["img_alt"])}">{cap}</figure>'
     body = f"""{bar(up, 'writing')}
 <main class="page">
 <a class="crumb" href="{up}writing.html">← Writing</a>
 <h1 class="page-title">{p['title']}</h1>
 <div class="page-meta">{p['date']}</div>
-<figure class="cover"><img src="{up}assets/{p['img']}" alt="{attr(p['img_alt'])}">{cap}</figure>
+{cover}
 <article class="prose">
 {fill_videos(p['body'], mode)}
 </article>

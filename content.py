@@ -134,6 +134,29 @@ PROJECTS = [
 
 # ---------------------------------------------------------------- POSTS (newest first)
 POSTS = [
+ dict(slug="debt-interest-and-health-budgets",
+  title="3.4 billion people live in countries that spend more on debt interest than on either health or education",
+  date="Oct 2026",
+  img="post-debt.jpg",
+  img_alt="Black and white photograph of a courtyard stairwell, storeys of external staircases stacked above one another, with a single person walking down one flight",
+  credit=None,
+  teaser="Some of the heaviest pressures on health are decided in national budgets, and debt was the most surprising example I came across.",
+  body="""
+<p>Ever since some courses in systems science during my psychology degree, I’ve been working to fill in the blanks in my mental model of health inequality as it stands today. This led me to read Jason Hickel’s <em>The Divide</em> (2017); how some of the heaviest pressures on health are decided in national budgets has stayed with me, debt being the most surprising example I came across. As I have many colleagues invested in health equity who are not adjacent to the economics domain, I hope scratching at the surface of this subject is helpful.</p>
+<p>I wanted to see if this connection is supported by the numbers. About 3.4 billion people live in countries that spend more on debt interest than on either health or education (<a href="https://unctad.org/publication/world-of-debt">UNCTAD, 2025</a>). That figure describes interest, not principal, and it describes public budgets and not outcomes, but it points to how much of a health system’s room to operate can be set well before any charity organization or NGO touches access barriers.</p>
+<p>Mental health is where I notice this most, since it already receives a median of about 2.1% of government health spending worldwide, as reported by countries to <a href="https://www.who.int/publications/i/item/9789240114487">WHO (2025)</a>. The difference in capacity is stark and well known, with below two mental health workers per 100,000 people in low-income countries against over 60 in high-income ones (<a href="https://www.who.int/publications/i/item/9789240036703">WHO, 2021</a>).</p>
+<p>What those figures cannot tell me is how directly debt reaches the clinic, and the research on that is still ongoing. Recent analysis of low- and middle-income countries links higher debt servicing to a modest shift in who pays for healthcare, from governments toward households (<a href="https://doi.org/10.1093/heapol/czag070">Federspiel &amp; Borghi, 2026</a>). The effect was small and not consistent across every model tested, but it runs in the direction the budget figures suggest, which is enough to leave the loose string untied in my mind.</p>
+<p>In 2024 I <a href="mental-health-infrastructure.html">wrote</a> that therapists and their clients are carrying a world overdue for systems-level change, and this is a version of that argument one step further upstream. If part of the answer to who gets mental healthcare is being set by debt burdens and not by health ministries, I want to know how we can advocate for more complete stakeholder representation in the rooms where these choices are made.</p>
+""",
+  sources=[
+   'Federspiel, F., &amp; Borghi, J. (2026). Aid, debt, International Monetary Fund conditionalities and domestic health financing in low- and middle-income countries. <em>Health Policy and Planning</em>, 41(7), 1049–1066. <a href="https://doi.org/10.1093/heapol/czag070">doi.org/10.1093/heapol/czag070</a>',
+   'Hickel, J. (2017). <em>The divide: A brief guide to global inequality and its solutions</em>. William Heinemann.',
+   'United Nations Conference on Trade and Development. (2025). <em>A world of debt 2025: It is time for reform</em>. <a href="https://unctad.org/publication/world-of-debt">unctad.org/publication/world-of-debt</a>',
+   'World Health Organization. (2021). <em>Mental health atlas 2020</em>. <a href="https://www.who.int/publications/i/item/9789240036703">who.int</a>',
+   'World Health Organization. (2025). <em>Mental health atlas 2024</em>. <a href="https://www.who.int/publications/i/item/9789240114487">who.int</a>',
+  ],
+  related=('Related post', '../writing/mental-health-infrastructure.html', 'Mental health is an infrastructure problem too'),
+ ),
  dict(slug="lgbtqi-disclosure-france",
   title="Disclosure, concealment and LGBTQI mental health in France", date="Jul 2026",
   img="post-disclosure.jpg", img_alt="Ink illustration of a crowd of identical faces, with one person covering their mouth",
